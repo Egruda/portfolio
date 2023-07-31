@@ -1,0 +1,492 @@
+h1 {
+  animation: slideY 1s linear 0s;
+}
+
+@keyframes slideY {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: stretch;
+}
+
+picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 224, 50, 0.8) 60%,
+    whitesmoke 60.5%
+  );
+  padding: 12px;
+  min-height: 70vh;
+}
+
+.about-first {
+  background-color: whitesmoke;
+}
+
+i {
+  font-size: large;
+}
+
+.git {
+  width: 30px;
+}
+
+.git-footer {
+  width: 48px;
+}
+
+i {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover i,
+a:focus i,
+a:hover .git-footer,
+a:focus .git-footer {
+  border-bottom: 3px dashed whitesmoke;
+}
+
+svg {
+  width: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  padding: 0px 15px;
+  background-color: white;
+}
+
+.project {
+  margin: 0px;
+  /* display: grid;
+        grid-template-columns: 1fr; */
+  gap: 0px;
+  background-color: rgb(255, 224, 50);
+  font-size: 1rem;
+  /* align-items: start;
+        align-content: start; */
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.project-description {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  background-color: rgb(255, 224, 50);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px;
+}
+
+.my-work {
+  color: #121212;
+}
+
+.emailsend {
+  color: #121212;
+}
+
+.about-link {
+  color: #121212;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: #121212;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: rgb(255, 224, 50);
+  margin-top: 20px;
+}
+
+footer {
+  color: rgb(255, 224, 50);
+  background-color: #121212;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: rgb(255, 224, 50) 3px solid;
+}
+
+.work {
+  padding: 12px 12px 30px 12px;
+  background-color: whitesmoke;
+}
+
+.email {
+  padding: 8px 25px;
+  border-radius: 12px;
+}
+
+.stacks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.stack {
+  width: 50px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgb(255, 224, 50);
+}
+
+address {
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+}
+
+.icon {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  /* background-color: rgb(255, 224, 50); */
+
+  padding: 8px 18px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.git-icon {
+  text-decoration: none;
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+.name {
+  color: rgb(255, 224, 50);
+  font-weight: 900;
+}
+
+.role {
+  font-size: 1.5rem;
+  align-self: center;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 224, 50);
+  white-space: nowrap;
+  animation:
+    typing 1s steps(20, end) 1s forwards,
+    blink 0.8s 2s infinite;
+  font-size: 1.6rem;
+  width: 0;
+
+  color: rgb(255, 224, 50);
+}
+
+.container-role {
+  display: inline-block;
+  max-width: auto;
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  gap: 30px;
+  font-family: "Playfair Display", serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 280px;
+}
+
+.know-me {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  border: rgb(255, 224, 50) 2px solid;
+  opacity: 0;
+  background-color: rgb(255, 224, 50);
+  animation: slideleft 1s linear 2s forwards;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: whitesmoke;
+}
+
+a:hover img,
+a:focus img,
+a:focus svg,
+a:hover svg {
+  border-bottom: 3px dashed #000;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  header,
+  .know-me {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 2rem;
+  }
+
+  .about {
+    min-height: 55vh;
+    background-image: linear-gradient(
+      160deg,
+      rgba(255, 224, 50, 0.8) 60%,
+      whitesmoke 60.5%
+    );
+    line-height: 1.8;
+    padding: 50px;
+  }
+
+  .project-description {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .project {
+    min-height: 550px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    background-color: rgb(255, 224, 50);
+
+    align-items: start;
+    align-content: start;
+  }
+
+  .contact {
+    margin-top: 0px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .stacks {
+    gap: 30px;
+  }
+
+  .stack {
+    width: 70px;
+  }
+
+  svg,
+  .git {
+    width: 35px;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+    animation: slideY 1s linear 0s forwards;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  @keyframes slideY {
+    from {
+      transform: translate(-30px, -20px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-30px, 0px);
+      opacity: 1;
+    }
+  }
+
+  .my-work {
+    padding: 30px;
+  }
+
+  header,
+  .know-me {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 2rem;
+  }
+
+  .about {
+    min-height: 60vh;
+    background-image: linear-gradient(
+      170deg,
+      rgba(255, 224, 50, 0.8) 60%,
+      whitesmoke 60.5%
+    );
+    line-height: 1.8;
+    padding: 100px 150px;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+    justify-items: center;
+    align-items: stretch;
+  }
+
+  .project {
+    min-height: 812px;
+    margin: 0px;
+    /* display: grid;
+        grid-template-columns: 1fr; */
+    gap: 0px;
+    background-color: rgb(255, 224, 50);
+    font-size: 1.3rem;
+    /* align-items: start;
+        align-content: start; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-description {
+    padding: 50px;
+  }
+
+  svg,
+  .git {
+    width: 50px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .role {
+    transform: translateX(-30px);
+  }
+
+  .contact p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .stacks {
+    gap: 30px;
+    margin-top: 75px;
+  }
+
+  .stack {
+    width: 100px;
+  }
+}
